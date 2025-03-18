@@ -1,4 +1,4 @@
-# 📝 2주차 개발일지
+# 📝 2주차 개발일지 (03.12~03.18)
 
 ## 목표 : 프로젝트 기본 구조 설계 (HTML/CSS 기본 레이아웃)
 
@@ -7,19 +7,19 @@
 - 회원가입 페이지 UI구현
 - workspace 기본 구조 구현
 
-## 프로젝트 디렉토리 구조 정리 (1주차 개발)
+## 프로젝트 디렉토리 구조 정리 (2주차 개발)
 
 ![Image](https://github.com/user-attachments/assets/ab4243be-eefb-4be8-ac68-5f6f390f77d5)
 
 - index.html (메인 페이지)
 - login.html (로그인 페이지)
 - signup.html (회원가입 페이지)
-- workspace.html (로그인 후 개인 workspace 페이지)
+- workspace.html (로그인 후 workspace(메인화면) 페이지)
 - assets/ (이미지, 아이콘 저장 폴더)
     - main_cat.jpg (메인 페이지에 삽입되는 고양이 이미지)
     - profile.png (workspace 페이지에 삽입되는 프로필 이미지)
 - scripts/ (JavaScript 저장 폴더)
-    - auth.js (로그인, 회원가입, 로그아웃 등의 인증(Authentication) ****관련 코드)
+    - auth.js (로그인, 회원가입, 로그아웃 등의 인증(Authentication) 관련 코드)
     - workspace.js (workspace 페이지 동적 기능 코드)
 - styles/ (CSS 저장 폴더)
     - main.css (메인 페이지 스타일)
@@ -27,7 +27,7 @@
     - signup.css (회원가입 페이지 스타일)
     - workspace.css (workspace 페이지 스타일)
 
-## 개발 진행
+## 개발 진행 현황
 
 ### 1. 메인 페이지 UI 구현
 
@@ -69,7 +69,7 @@
 - 저장소 추가 후 저장소 카드가 들어갈 자리 배치
 - 저장소 추가 버튼, 모달 구현
 - 사이드 바 (프로필 사진 + 저장소 목록)
-- 추후 firebase를 활용해 새로고침 해도 저장소가 사라지지 않도록 구현 필요함
+- 추후 firebase를 활용해 새로고침 해도 저장소가 사라지지 않도록 구현 예정
 
 ### 5. CSS 스타일링 및 반응형 적용
 
@@ -87,4 +87,4 @@
 
 - 메인, 로그인, 회원가입, workspace 페이지 스타일링
 - 다양한 화면 크기에 대응할 수 있도록 반응형 디자인 적용 (메인, 로그인, 회원가입)
-- 추후 workspace페이지 기능 구현 마치면 반응형 디자인 적용 예정
+- 추후 workspace페이지 기능 구현 후 반응형 디자인 적용 예정
