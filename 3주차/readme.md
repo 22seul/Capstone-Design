@@ -151,51 +151,68 @@ firebase.js로 분리하기
     ```html
     <script type="module" src="scripts/auth.js"></script>
     ```
-    
-![Image](https://github.com/user-attachments/assets/a410134d-4c63-41f2-af3b-479021da6988)
-이전에 테스트용 계정은 회원가입이 되어있지 않아 로그인 실패
 
-![Image](https://github.com/user-attachments/assets/15de4906-072b-4c73-ab92-0fe80602337c)
-이메일, 비밀번호 입력 후 회원가입 버튼 누르면 회원가입 성공
-
-![Image](https://github.com/user-attachments/assets/40b8dc0e-3e24-4ab0-9100-b81aa0adfce7)
-회원가입 성공하면 Authentication 콘솔창에 사용자가 추가됨
-
-![Image](https://github.com/user-attachments/assets/acbb38f5-7571-461d-9c0b-b6e3440c52da)
-회원가입 후 로그인 하면 로그인 성공
-
-![Image](https://github.com/user-attachments/assets/ada07873-4e72-4fc2-a4e3-43c26485f4d8)
-같은 이메일과 비번으로 회원가입 시도하면 회원가입 실패
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/a410134d-4c63-41f2-af3b-479021da6988"></td>
+    <td><img src="https://github.com/user-attachments/assets/15de4906-072b-4c73-ab92-0fe80602337c"></td>
+  </tr>
+  <tr>
+    <td>이전에 테스트용 계정은 회원가입이 되어있지 않아 로그인 실패</td>
+    <td>이메일, 비밀번호 입력 후 회원가입 버튼 누르면 회원가입 성공</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/40b8dc0e-3e24-4ab0-9100-b81aa0adfce7"></td>
+    <td><img src="https://github.com/user-attachments/assets/acbb38f5-7571-461d-9c0b-b6e3440c52da"></td>
+  </tr>
+  <tr>
+    <td>회원가입 성공하면 Authentication 콘솔창에 사용자가 추가됨</td>
+    <td>회원가입 후 로그인 하면 로그인 성공</td>
+  </tr>
+   <tr>
+    <td colspan="2"><img src="https://github.com/user-attachments/assets/ada07873-4e72-4fc2-a4e3-43c26485f4d8"  width="55%"></td>
+  </tr>
+  <tr>
+    <td colspan="2">같은 이메일과 비번으로 회원가입 시도하면 회원가입 실패</td>
+  </tr>
+</table>
 
 ## **기본적인 오류 처리 & UI 연결**
 
 ### ✅ 1. **회원가입 시 예외 처리**
 워크스페이스에서 사용하기 위한 닉네임 입력 부분 추가
+<table>
+  <tr>
+    <td>1. 닉네임 길이 검사 → 2자 미만이면 "닉네임은 최소 2자 이상이어야 합니다." 메시지 표시</td>
+    <td>2. 이메일 형식 검사 → 잘못된 형식이면 "올바른 이메일 형식을 입력하세요!" 메시지 표시</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/de1170ce-0432-4026-9eb0-2736b13c2a8b"></td>
+    <td><img src="https://github.com/user-attachments/assets/5179986b-1868-4a97-8477-e00b4665dba5"></td>
+  </tr>
+   <tr>
+    <td>3. 비밀번호 길이 검사 → 6자 미만이면 "비밀번호는 최소 6자 이상이어야 합니다." 메시지 표시</td>
+    <td>4. 이메일 중복 검사 → "이미 사용 중인 이메일입니다." 오류 메시지 표시</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/2c753dbc-8463-4266-84ef-c670177aef63"></td>
+    <td><img src="https://github.com/user-attachments/assets/6974a5a3-00ee-49f9-96dc-372d833e8e06"></td>
+  </tr>
+</table>
 
-1. **닉네임 길이 검사 →** 2자 미만이면 `닉네임은 최소 2자 이상이어야 합니다.` 메시지 표시
-    ![Image](https://github.com/user-attachments/assets/de1170ce-0432-4026-9eb0-2736b13c2a8b)
-    
-
-2. **이메일 형식 검사** → 잘못된 형식이면 `올바른 이메일 형식을 입력하세요!` 메시지 표시
-    ![Image](https://github.com/user-attachments/assets/5179986b-1868-4a97-8477-e00b4665dba5)
-    
-
-3. **비밀번호 길이 검사** → 6자 미만이면 `비밀번호는 최소 6자 이상이어야 합니다.` 메시지 표시
-    ![Image](https://github.com/user-attachments/assets/2c753dbc-8463-4266-84ef-c670177aef63)
-    
-
-4. **이메일 중복 검사** → `이미 사용 중인 이메일입니다.` 오류 메시지 표시
-    ![Image](https://github.com/user-attachments/assets/6974a5a3-00ee-49f9-96dc-372d833e8e06)
-    
 ### ✅ 2. **로그인 시 예외 처리**
 
  - **잘못된 이메일 또는 비밀번호 입력 시** → `이메일 또는 비밀번호가 잘못되었습니다.`
-
-![Image](https://github.com/user-attachments/assets/a43f3f35-5fa9-49b8-9ceb-0a26f52aade8)
-이메일 잘못 입력
-
-![Image](https://github.com/user-attachments/assets/552e5d18-6082-4d07-a3ea-11c2e38d2d24)
-비밀번호 잘못 입력
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/a43f3f35-5fa9-49b8-9ceb-0a26f52aade8"></td>
+    <td><img src="https://github.com/user-attachments/assets/552e5d18-6082-4d07-a3ea-11c2e38d2d24"></td>
+  </tr>
+   <tr>
+    <td>이메일 잘못 입력</td>
+    <td>비밀번호 잘못 입력</td>
+  </tr>
+</table>
 
 ### ✅ 3. **기존 `alert()` 메시지 대신 HTML 요소에 오류 표시**
 
@@ -205,14 +222,21 @@ firebase.js로 분리하기
 
 ### ✅ 4. 워크스페이스에 닉네임 표시
 
-![Image](https://github.com/user-attachments/assets/1b7234d1-7e36-40b9-a0d9-89e1c1fe7aea)
-회원가입 성공
-
-![Image](https://github.com/user-attachments/assets/0f71220f-3190-4d32-9b14-0f8c736e2cfb)
-로그인 성공
-
-![Image](https://github.com/user-attachments/assets/40b4b143-5235-4408-93c4-e5a8028e844c)
-회원가입시 설정한 닉네임으로 워크스페이스 타이틀 작성됨
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/1b7234d1-7e36-40b9-a0d9-89e1c1fe7aea"></td>
+    <td><img src="https://github.com/user-attachments/assets/0f71220f-3190-4d32-9b14-0f8c736e2cfb"></td>
+  </tr>
+   <tr>
+    <td>회원가입 성공</td>
+    <td>로그인 성공</td>
+  </tr>
+   <td colspan="2"><img src="https://github.com/user-attachments/assets/40b4b143-5235-4408-93c4-e5a8028e844c" width="70%"></td>
+  </tr>
+   <tr>
+    <td colspan="2">회원가입시 설정한 닉네임으로 워크스페이스 타이틀 작성됨</td>
+  </tr>
+</table>
 
 ## 구글 로그인 추가
 
@@ -232,47 +256,58 @@ firebase.js로 분리하기
 
 1. 처음 로그인하면 **자동으로 회원가입** 처리 (Firebase Auth가 알아서 함)
 
-![Image](https://github.com/user-attachments/assets/7bf2a912-a676-42b1-9c75-6df3b8655ac0)
-버튼 클릭 시 팝업창 자동으로나옴
-
-![Image](https://github.com/user-attachments/assets/bbe5a4ce-09ba-4fab-8e7b-9125aca3143c)
-사용 계정이 없다면 직접 입력해서 회원 가입 가능
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/7bf2a912-a676-42b1-9c75-6df3b8655ac0"></td>
+    <td><img src="https://github.com/user-attachments/assets/bbe5a4ce-09ba-4fab-8e7b-9125aca3143c"></td>
+  </tr>
+   <tr>
+    <td>버튼 클릭 시 팝업창 자동으로나옴</td>
+    <td>사용 계정이 없다면 직접 입력해서 회원 가입 가능</td>
+  </tr>
+</table>
 
 2. 이후부터는 구글 로그인 클릭 시 로딩 후 **자동 로그인**
-    ![Image](https://github.com/user-attachments/assets/dddb5422-3bc6-425b-8456-3d660e852698)
+    ![Image](https://github.com/user-attachments/assets/f3c7809a-1163-4dd7-bdf3-dc2a1cbaec01) 
     
 3. **닉네임은 구글 계정 이름으로 설정**
-    ![Image](https://github.com/user-attachments/assets/f3c7809a-1163-4dd7-bdf3-dc2a1cbaec01)
+   ![Image](https://github.com/user-attachments/assets/dddb5422-3bc6-425b-8456-3d660e852698)
 
 ## **UI 개선 & UX 보완**
 
 ### ✅ 1. **입력 필드와 버튼 간격 조정**
 
 - 로그인 페이지와 회원가입 페이지로 이동해도 간격과 전체 크기를 유사하도록 수정
-    ![Image](https://github.com/user-attachments/assets/34f5f996-6384-4b8b-96ae-e3362a6391d6)
-    ![Image](https://github.com/user-attachments/assets/f8c46090-8a08-4d8f-a7da-2056780290b2)
-
+    <p align="center">  
+     <img src="https://github.com/user-attachments/assets/34f5f996-6384-4b8b-96ae-e3362a6391d6" align="center" width="49%">  
+     <img src="https://github.com/user-attachments/assets/f8c46090-8a08-4d8f-a7da-2056780290b2" align="center" width="49%">
+   </p>
 - %를 활용해 반응형으로 다른 기기에서도 간격이 너무 붙지 않도록 유지
-    ![Image](https://github.com/user-attachments/assets/642c0b48-e473-4d53-b289-1d08d173abc3)
-    ![Image](https://github.com/user-attachments/assets/496a834c-6570-4aec-a0a1-acc592173276)
-    ![Image](https://github.com/user-attachments/assets/8f582ba0-fb53-4dd9-9a53-367675e04413)
+   <p align="center">  
+     <img src="https://github.com/user-attachments/assets/642c0b48-e473-4d53-b289-1d08d173abc3" align="center" width="25%">  
+     <img src="https://github.com/user-attachments/assets/496a834c-6570-4aec-a0a1-acc592173276" align="center" width="25%">
+     <img src="https://github.com/user-attachments/assets/8f582ba0-fb53-4dd9-9a53-367675e04413" align="center" width="48%">
+   </p>
 
 ### ✅ 2. **회원가입 페이지의 "로그인" 링크 가독성 개선**
 
 - 색상, 굵기, 밑줄 등의 css코드를 작성
 - 사용자의 클릭을 유도할 수 있도록 텍스트 앞에 링크를 의미하는 이모지를 추가
-    ![Image](https://github.com/user-attachments/assets/34df8c47-6646-455c-b331-84458dbd9bee)
-    ![Image](https://github.com/user-attachments/assets/2a043205-6fc2-49a2-a2ba-227a2fa90dbd)
-
+   <p align="center">  
+        <img src="https://github.com/user-attachments/assets/34df8c47-6646-455c-b331-84458dbd9bee" align="center" width="49%">  
+        <img src="https://github.com/user-attachments/assets/2a043205-6fc2-49a2-a2ba-227a2fa90dbd" align="center" width="49%">
+   </p>
+   
 ### ✅ 3. 로그인 **페이지에서 회원가입 페이지로의 이동 수정**
 
 - 회원가입 페이지와 유사하도록 기존에 사용하던 회원가입 페이지로 이동하는 버튼을  a태그로 변경
-    ![Image](https://github.com/user-attachments/assets/06a3f931-4bb4-45bd-b3ed-2616a5b613b4)
-
+   <img src="https://github.com/user-attachments/assets/06a3f931-4bb4-45bd-b3ed-2616a5b613b4"  width="55%">
+   
 ### ✅ 4. 비밀번호 보이기/숨기기 기능 추가
 
 - 기존에 비밀번호 입력한 것은 볼 수 없었는데, 오타나 자신의 비밀번호를 확실히 하기 위해 볼 수 있는 기능의 필요성을 인식
 - 비밀번호 입력창 오른쪽에 위치한 이모지 클릭으로 비밀번호 보이기/숨기기 변경이 가능
-    ![Image](https://github.com/user-attachments/assets/6c84f2cc-abc9-47ac-8616-cbbc48481be3)
-    ![Image](https://github.com/user-attachments/assets/eb826552-5978-47aa-b2dc-5b8ef16ae6a0)
-
+    <p align="center">  
+        <img src="https://github.com/user-attachments/assets/6c84f2cc-abc9-47ac-8616-cbbc48481be3" align="center" width="49%">  
+        <img src="https://github.com/user-attachments/assets/eb826552-5978-47aa-b2dc-5b8ef16ae6a0" align="center" width="49%">
+   </p>
