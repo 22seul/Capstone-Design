@@ -309,5 +309,5 @@ firebase.js로 분리하기
 - 비밀번호 입력창 오른쪽에 위치한 이모지 클릭으로 비밀번호 보이기/숨기기 변경이 가능
     <p align="center">  
         <img src="https://github.com/user-attachments/assets/6c84f2cc-abc9-47ac-8616-cbbc48481be3" align="center" width="49%">  
-        <img src="https://github.com/user-attachments/assets/eb826552-5978-47aa-b2dc-5b8ef16ae6a0" align="center" width="49%">
+        <img src="https://github.com/user-attachments/assets/eb826552-5978-47aa-b2dc-5b8ef16ae6a0" align="center" width="50%">
    </p>
