@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>로그인</h2>
+        <form id="login-form">
+            <input type="email" id="login-email" placeholder="이메일 입력" required>
+            <div class="password-container">
+                <input type="password" id="login-password" placeholder="비밀번호 입력" required>
+                <span class="toggle-password" onclick="togglePassword('login-password')">🔍</span>
+            </div>            
+            <p id="login-error" class="error-message"></p> <!-- 오류 메시지 표시 -->
+            <button type="submit">로그인</button>
+            <button id="google-login">
+                <img src="assets/google-logo.png" alt="Google Logo">
+                Google 간편로그인
+            </button>
+        </form>
+        <p>계정이 없으신가요? <a href="signup.html"> 🔗회원가입 </a></p>
+    </div>
+
+    <script type="module" src="scripts/auth.js"></script>
+</body>
+</html>

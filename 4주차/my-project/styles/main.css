@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #FAFAFA;
+    margin: 0;
+    padding: 0;
+}
+
+/* 컨테이너 중앙 정렬 및 페이드 인 */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+p {
+    color: #2F2F2F;
+    font-size: clamp(16px, 2vw, 24px);
+}
+
+/* 버튼 스타일 및 애니메이션 */
+button {
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: clamp(12px, 2vw, 20px);
+    transition: transform 0.3s ease-in-out;
+    animation: bounceIn 0.8s ease-out;
+}
+
+/* 버튼 호버 효과 */
+button:hover {
+    transform: scale(1.1);
+}
+
+/* 버튼 등장 시 바운스 효과 */
+@keyframes bounceIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    60% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+/* 이미지 반응형 크기 */
+img {
+    width: clamp(320px, 40vw, 480px);
+    height: auto;
+}
+
+/* FHD 해상도 */
+@media all and (min-width:1920px) { 
+    p {
+        font-size: clamp(24px, 2vw, 28px);
+    }
+    button {
+        font-size: clamp(24px, 2vw, 28px);
+    }
+    img {
+        width: clamp(420px, 40vw, 560px);
+    }
+}
+
+/* 태블릿 (768px ~ 1023px) */
+@media all and (min-width:768px) and (max-width:1023px) { 
+    p {
+        font-size: clamp(24px, 2vw, 28px);
+    }
+    button {
+        font-size: clamp(24px, 2vw, 32px);
+    }
+    img {
+        width: clamp(420px, 40vw, 760px);
+    }
+}
