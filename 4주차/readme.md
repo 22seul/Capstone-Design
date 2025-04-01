@@ -105,3 +105,132 @@
         
       - 관련 코드 삭제 함으로써 닉네임 변경 시 새로고침을 하면 변경된 닉네임이 유지되지 않음 <br>
           → 닉네임 변경 코드에서 local storage에 저장하여 새로고침을 해도 유지되도록 변경
+
+## Firebase Firestore 시작 및 설정
+
+저장소 추가 기능을 위해 firestore 필요
+
+### **✅ 1. 데이터 베이스 만들기**
+
+![Image](https://github.com/user-attachments/assets/1f6a520c-e6bc-4f3b-adaf-1c17e8a00edb)
+
+### **✅ 2. 위치 설정 : 서울**
+
+![Image](https://github.com/user-attachments/assets/c0eb9a9f-f56e-4572-8ec1-f7c138251dde)
+
+### **✅ 3. 보안규칙 설정: 테스트모드**
+
+테스트 모드로 설정해야 localhost에서 firestore로 데이터 요청이 가능
+
+![Image](https://github.com/user-attachments/assets/d1d6fc98-67c7-4d7b-89bf-348fa4882c18)
+![Image](https://github.com/user-attachments/assets/62e3c3cd-2d46-434a-945a-fda48e2fea83)
+![Image](https://github.com/user-attachments/assets/9ff5c167-9d55-4a33-8329-fb870b3611b4)
+
+### **✅ 4. firebase.js코드 수정**
+
+![Image](https://github.com/user-attachments/assets/dc36fb2c-3684-48f7-ba0a-72ca5159c8d2)
+
+## **추가된 저장소 화면에 표시**
+
+firestore에 저장된 저장소 목록들을 화면에 표시
+
+### **✅ 1. 정렬 관련 코드 문제 발생 및 해결**
+
+- 정렬 코드를 작성했으나 firestore에 색인이 없어 오류 발생
+    
+    ![Image](https://github.com/user-attachments/assets/ac8689ba-fee4-4220-8564-a4a57e5c104e)
+    
+- firestore에 색인을 추가하여 오류 해결
+    
+    ![Image](https://github.com/user-attachments/assets/508751cc-78ed-49e9-a4a1-1579299e93d7) 
+
+### **✅ 2. 저장소 표시**
+
+- 저장소의 기간을 기준으로 최신 순으로 정렬되어  표시
+    
+    ![Image](https://github.com/user-attachments/assets/4bf3d750-fe47-4bcc-9a9a-c106609b0304)
+
+### **✅ 3. 저장소 목록 사이드바 표시**
+
+- 저장소 목록이 사이드바에 년도별로 그룹화되어 표시, 년도를 클릭하면 해당년도 기간의 저장소 목록을 확인가능
+    
+    ![Image](https://github.com/user-attachments/assets/2ae77fa1-f7b0-451b-9a8b-070fe164d876)
+
+## 저장소 추가 기능
+
+### **✅ 1. 저장소 추가 버튼 클릭**
+
+![Image](https://github.com/user-attachments/assets/61858ae5-e1f4-495c-be42-0b168f71bef1)
+
+### **✅ 2. 저장소 정보 입력 및 추가**
+
+- 저장소 이름 및 기간 입력 후 추가 (해당이미지는 3개의 저장소 추가후 4번째 저장소 추가하는 이미지)
+    
+    ![Image](https://github.com/user-attachments/assets/aef66d8f-589a-48dd-ad31-a67ecd274fc3)
+
+### **✅ 3. 추가된 저장소 확인**
+
+- 저장된 데이터를 실시간으로 workspace페이지에서 확인
+    
+    ![Image](https://github.com/user-attachments/assets/16b13fa3-14b6-45a5-aa26-701e8cbd4ff2)
+    
+- firebase에 데이터가 저장됨
+    
+    ![Image](https://github.com/user-attachments/assets/bf5085fd-220b-4059-ada2-dccbc018e889)  
+
+## **저장소 수정 기능**
+
+### **✅ 1. 저장소 수정 버튼 클릭**
+
+- 행복한 2025년도가 되었으면이라는 저장소의 수정 버튼 클릭
+    
+    ![Image](https://github.com/user-attachments/assets/6f4421e1-467f-4f2b-bcb4-f4f56931c619) 
+
+### **✅ 2. 수정할 정보 입력**
+
+- 새 저장소 이름 입력 : 행복한 2025년도 보내자!!
+    
+    ![Image](https://github.com/user-attachments/assets/2cba155c-992b-4181-b4cc-1c16a44d598b)
+    
+- 새 시작 날짜입력 : 2025-03-04
+    
+    ![Image](https://github.com/user-attachments/assets/d10a5ed1-bdc3-4d37-90c6-cc699a91dffa)
+
+- 새 종료 날짜 입력 : 2025-12-31
+    
+    ![Image](https://github.com/user-attachments/assets/6636cf7a-6b6a-4032-8679-baa9a24f12f5)
+
+### **✅ 3. 수정된 저장소 확인**
+
+- 수정된 데이터를 실시간으로 workspace페이지에서 확인
+    
+    ![Image](https://github.com/user-attachments/assets/97eaf7c4-7d52-47fa-b821-d395872b7e9f)
+
+- firebase에 데이터가 수정됨 (필드 값이 수정된걸 확인가능)
+    
+    ![Image](https://github.com/user-attachments/assets/6267a44f-ebb8-4dc2-b912-2a41f8aa0fd8)
+    
+## **저장소 삭제 기능**
+
+### **✅ 1. 저장소 삭제 버튼 클릭**
+
+- 2026년도.. 저장소의 삭제 버튼 클릭
+    
+    ![Image](https://github.com/user-attachments/assets/159546b9-21c0-4d09-9a99-de0cb17c72e9)
+
+### **✅ 2. 삭제 여부 재확인**
+
+- 삭제 여부 재확인을 통해 실수로 버튼을 눌러 삭제하는 일 방지
+    
+    ![Image](https://github.com/user-attachments/assets/56869534-9ee4-47f9-bc6e-07f98d67b690)
+
+### **✅ 3. 삭제된 저장소**
+
+- 삭제된 데이터를 실시간으로 workspace페이지에서 확인가능
+    
+    ![Image](https://github.com/user-attachments/assets/f131b403-9507-447f-8a4f-f6e6274c43d9)
+
+- firebase에 저장소가 삭제됨 (문서가 삭제되어 3개만 남은것 확인 가능)
+    
+    ![Image](https://github.com/user-attachments/assets/3683807b-4d0e-4690-8b49-47807fb5997f)
+  
