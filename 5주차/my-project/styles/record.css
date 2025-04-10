@@ -1,0 +1,152 @@
+/* 전체 레이아웃 */
+body {
+  background-color: #FAFAFA;
+  color: #2F2F2F;
+}
+
+/* 기록공간: 전체 레이아웃 */
+.record-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.record-title {
+  flex: 1;
+  font-size: 2.5rem;
+  margin: 7rem 0 0 2.5rem;
+}
+
+.record-inputs {
+  flex: 1.2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-right: 2rem;
+}
+.record-inputs input,
+.record-inputs select,
+.record-inputs button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 4px;
+}
+
+.record-inputs input,
+.record-inputs select {flex:39%;}
+.record-inputs button {flex:12%;}
+
+.record-inputs input:focus,
+.record-inputs select:focus {
+  outline: none;
+  border-width: 2px;
+}
+
+.record-inputs button:hover {
+  background-color: #e2e2e2;
+  color: #1c1c1c;
+}
+
+hr {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 1.5rem 2rem 0.5rem 2rem;
+}
+
+/* 기록공간:과목 */
+.subject-group-container {
+  margin: 0 3rem 0 3rem;
+  background: rgba(0,0,0,0.1);
+}
+.attribute-group {
+  padding: 1rem 0 1.5rem 0;
+  margin:0.1rem 0;
+  background-color: #FAFAFA;
+}
+.toggle-header {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0.5rem 0;
+  color: #333;
+}
+.subject-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-auto-rows: minmax(180px, auto);
+  gap: 1rem;
+  padding: 0 0 0 1rem;
+}
+.subject-card {
+  position: relative;
+  background-color: #FAFAFA;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 8px;
+  padding: 16px 16px 44px 16px;
+  cursor: pointer;
+  font-size:1.4rem;
+}
+.subject-card:hover {
+  background: rgba(0,0,0,0.02);
+}
+.subject-card button {
+  padding: 0.2rem;
+  border: 1px solid #d1d1d1;
+  border-radius: 16px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.subject-card .edit,
+.subject-card .delete {
+  position: absolute;
+  bottom: 0.8rem;
+}
+.edit{
+  position: absolute;
+  right: 3.4rem;
+}
+.delete{
+  position: absolute;
+  right: 0.8rem;
+}
+.subject-card button:hover {
+  background-color: #e2e2e2;
+  color: #1c1c1c;
+  transform: scale(1.02);
+}
+
+.subject-card.editing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f5f5f5;
+  padding: 12px 12px 82px 12px;
+}
+.subject-card.editing input,
+.subject-card.editing button {
+  padding: 0.3rem;
+  font-size: 1rem;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 4px;
+}
+.subject-card.editing input {
+  margin-bottom: 0.4rem;
+  width: 100%;
+  outline:none;
+}
+.subject-card.editing button {
+  position: absolute;
+  font-size: 1.2rem;
+  padding: 0.2rem;
+  right: 0.8rem;
+  bottom: 0.8rem;
+  border-radius: 16px;
+}
+
+.subject-card.editing input:focus {
+  outline: none;
+  border-width: 2px;
+}

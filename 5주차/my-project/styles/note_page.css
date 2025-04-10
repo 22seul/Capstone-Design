@@ -1,0 +1,66 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #FAFAFA;
+  color: #333;
+}
+
+.note-header {
+  margin: 2rem 2.5rem 0 1.7rem;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.note-title {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+.note-title-input {
+  font-size: 2.5rem;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #aaa;
+  margin: 1rem 0;
+}
+
+.note-saved {
+  font-size: 1rem;
+  color: #999;
+}
+
+.ql-toolbar {
+  background-color: #F5F5F5;
+  border: none;
+  margin: 0 1.5rem 0 1.5rem;
+  padding: 1rem;
+  border-radius: 4px 4px 0 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+#editor-container {
+  margin: 0 1.5rem 1.5rem 1.5rem;
+  background-color: #fafafa;
+  border-radius: 0 0 4px 4px;
+  min-height: 75vh;
+}
+
+.ql-editor {
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+img.resizable {
+  display: block;
+  resize: both;
+  overflow: auto;
+  cursor: grab;
+}

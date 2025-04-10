@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>과목 페이지</title>
+  <link rel="stylesheet" href="styles/subject_page.css" />
+</head>
+<body>
+  <div class="subject-title">과목명 로딩 중...</div>
+  <div class="subject-divider"></div>
+  <div class="note-controls">
+    <input type="text" id="note-title" placeholder="노트 제목" />
+    <select id="note-color">
+      <option value="#ffffff">기본</option>
+      <option value="#f5f5f5">연한 회색</option>
+      <option value="#e0e0e0">기본 회색</option>
+      <option value="#cccccc">중간 회색</option>
+      <option value="#b0b0b0">진한 회색</option>
+    </select>
+    <button id="add-note">➕</button>
+  </div>
+
+  <div class="notes-container"></div>
+
+  <script type="module" src="scripts/subject_page.js"></script>
+</body>
+</html>

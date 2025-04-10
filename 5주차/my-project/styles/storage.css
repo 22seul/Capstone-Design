@@ -1,0 +1,184 @@
+/* 전체 레이아웃 */
+body {
+  background-color: #FAFAFA;
+  color: #2F2F2F;
+}
+
+/* 저장소 이름, 저장소 기간간 */
+.storage-title {
+  font-size: 2.5rem;
+  margin: 7rem 0 0 2.5rem;
+  text-align: left;
+}
+
+.storage-period {
+  text-align: left;
+  margin: 1rem 0 1rem 2.5rem;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* 기록공간 + 일정관리공간간 */
+.storage-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 0.1rem;
+  gap: 0.1rem;
+  margin: 0 2rem 0 2rem;
+  background: rgba(0,0,0,0.2);
+  min-height: 65vh;
+}
+
+/* 기록공간, 일정관리공간 */
+.record-space, .planner-space {
+  background: #FAFAFA;
+  padding: 0 1.5rem 0 1.5rem;
+  flex: 1 1 45%;
+  width: 50%;
+}
+
+/* 기록공간 */
+.record-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0 0 1rem 1rem;
+}
+/* 기록공간:입력 */
+.record-inputs input,
+.record-inputs select,
+.record-inputs button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 4px;
+}
+
+.record-inputs input,
+.record-inputs select {flex:39%;}
+.record-inputs button {flex:12%;}
+
+.record-inputs input:focus,
+.record-inputs select:focus {
+  outline: none;
+  border-width: 2px;
+}
+
+.record-inputs button:hover {
+  background-color: #e2e2e2;
+  color: #1c1c1c;
+}
+
+/* 기록공간:과목 */
+.subject-group-container {
+  margin: 0 0 1rem 1rem;
+  background: rgba(0,0,0,0.1);
+}
+.attribute-group {
+  padding: 1rem 0 1.5rem 0;
+  margin:0.1rem 0;
+  background-color: #FAFAFA;
+}
+.toggle-header {
+  font-weight: bold;
+  margin: 0.5rem 0;
+  color: #333;
+}
+.subject-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(120px, auto);
+  gap: 0.5rem;
+  padding: 0 0 0 1rem;
+}
+.subject-card {
+  position: relative;
+  background-color: #FAFAFA;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 8px;
+  padding: 16px 16px 44px 16px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.subject-card:hover {
+  background: rgba(0,0,0,0.02);
+}
+.subject-card button {
+  padding: 0.2rem;
+  border: 1px solid #d1d1d1;
+  border-radius: 16px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.subject-card .edit,
+.subject-card .delete {
+  position: absolute;
+  bottom: 0.8rem;
+}
+
+.edit{
+  position: absolute;
+  right: 3rem;
+}
+.delete{
+  position: absolute;
+  right: 0.8rem;
+}
+
+.subject-card button:hover {
+  background-color: #e2e2e2;
+  color: #1c1c1c;
+  transform: scale(1.02);
+}
+
+.subject-card.editing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #f5f5f5;
+  padding: 8px 8px 36px 8px;
+}
+.subject-card.editing input,
+.subject-card.editing button {
+  padding: 0.2rem;
+  font-size: 0.9rem;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 4px;
+}
+.subject-card.editing input {
+  margin-bottom: 0.2rem;
+  width: 100%;
+  outline:none;
+}
+.subject-card.editing button {
+  position: absolute;
+  font-size: 1rem;
+  right: 8px;
+  bottom: 0.4rem;
+  border-radius: 16px;
+}
+
+.subject-card.editing input:focus {
+  outline: none;
+  border-width: 2px;
+}
+
+/* 일정관리공간 */
+.todo-list {
+  list-style: none;
+  margin: 0 0 1rem 0.1rem;
+}
+
+.todo-list li {
+  background: #FAFAFA;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

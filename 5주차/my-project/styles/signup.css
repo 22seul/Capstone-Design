@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAFAFA;
+}
+
+.signup-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    color: #2F2F2F;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: clamp(360px, 40vw, 400px);
+    height: auto;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 5%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+}
+
+input:focus {
+    border-color: #1C1C1C;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-password {
+    position: absolute;
+    top: 44%;
+    right: 10%;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+.toggle-password:hover {
+    transform: scale(1.05);
+}
+
+.error-message {
+    color: red;
+    margin-top: 5px;
+}
+
+button {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"] {
+    margin: 2% 7.5% 5% 7.5%;
+    background-color: #1C1C1C;
+    color: #FFFFFF;
+}
+
+button[type="submit"]:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scale(1.02);
+}
+a {
+    color: #1C1C1C;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* FHD */
+@media all and (min-width:1920px) { 
+    .signup-container {
+        width: clamp(400px, 50vw, 560px);
+        font-size: clamp(18px, 2vw, 20px);
+    }
+    input, button {
+        font-size: clamp(18px, 2vw, 20px);
+    }
+}
+
+/* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px) */
+@media all and (min-width:768px) and (max-width:1023px) { 
+    .signup-container {
+        width: clamp(420px, 50vw, 600px);
+        font-size: clamp(20px, 2vw, 24px);
+    }
+    input, button {
+        font-size: clamp(20px, 2vw, 24px);
+    }
+}
+/*핸드폰*/
+@media all and (max-width:767px) { 
+    .signup-container {
+        width: clamp(240px, 40vw, 360px);
+        font-size: clamp(12px, 2vw, 14px);
+    }
+    input, button {
+        font-size: clamp(12px, 2vw, 14px);
+    }
+}

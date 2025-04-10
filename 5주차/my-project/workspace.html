@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workspace</title>
+    <link rel="stylesheet" href="styles/workspace.css">
+</head>
+<body>
+    <!-- 사이드바 -->
+    <div class="sidebar">
+        <div class="profile-container">
+            <!-- 프로필 이미지 -->
+            <img id="profile-img" src="assets/profile.png" alt="Profile">
+            <!-- 프로필 메뉴 -->
+            <div id="profile-menu" class="profile-menu">
+                <div class="profile-info">
+                    <img id="menu-profile-img" src="assets/profile.png" alt="Profile">
+                    <div class="user-details">
+                        <input id="nickname" type="text" value="사용자 닉네임"> <!-- 닉네임 입력 필드 -->
+                        <p id="email">user@example.com</p> <!-- 이메일 -->
+                    </div>
+                </div>
+                <hr>
+                <button id="logout-btn">로그아웃</button>
+            </div>
+        </div>
+                   
+        <div class="storage-list">
+            <h3>🗃️ 저장소 목록</h3>
+            <ul class="storages"></ul>
+        </div>
+    </div>
+    
+
+    <!-- 메인 콘텐츠 -->
+    <div class="main">
+        <div class="workspace-header"><span id="nickname-placeholder"></span>'s WORKSPACE</div>
+        <button class="add-btn">➕ 저장소 추가</button>
+        <div class="storage-container"></div>
+    </div>
+
+    <!-- 저장소 추가 모달 -->
+    <div class="modal">
+        <div class="modal-content">
+            <h2>저장소 추가</h2>
+            <input type="text" id="storage-name" placeholder="저장소 이름">
+            <label>시작 기간:</label>
+            <input type="date" id="storage-start">
+            <label>종료 기간:</label>
+            <input type="date" id="storage-end">
+            <button id="save-storage">추가</button>
+            <button id="close-modal">닫기</button>
+        </div>
+    </div>
+
+    <script type="module" src="scripts/workspace.js"></script>
+    <script type="module" src="scripts/workspace_store.js"></script>
+</body>
+</html>

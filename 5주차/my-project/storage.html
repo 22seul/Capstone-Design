@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>저장소 페이지</title>
+  <link rel="stylesheet" href="styles/storage.css" />
+</head>
+<body>
+  <h1 class="storage-title">저장소 이름</h1>
+  <p class="storage-period">기간: </p>
+
+  <div class="storage-container">
+    <!-- 기록공간 -->
+    <div class="record-space">
+      <h2 class="clickable-title" id="record-title">✏️ 기록공간 </h2>
+      <div class="record-inputs">
+        <input type="text" id="subject-name" placeholder="과목명 입력" />
+        <input type="text" id="attribute-input" list="attribute-select" placeholder="속성 입력 또는 선택" />
+        <datalist id="attribute-select"></datalist>
+        <button id="add-subject">➕ 추가</button>
+      </div>
+      <div class="subject-group-container"></div>
+    </div>
+
+    <!-- 일정관리 -->
+    <div class="planner-space">
+      <h2>📆 일정관리</h2>
+      <ul class="todo-list">
+        <li><input type="checkbox"> 5주차 복습 - 2025/04/06</li>
+        <li><input type="checkbox"> 기록공간 개발 - 2025/04/06</li>
+      </ul>
+    </div>
+  </div>
+
+  <script type="module" src="scripts/storage.js"></script>
+  <script type="module" src="scripts/storage_record.js"></script>
+</body>
+</html>
