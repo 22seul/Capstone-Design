@@ -208,31 +208,31 @@
 마크다운은 개발자나 사용했던 사람에게는 익숙하지만 다른 사람들에게는 불편할 수도 있다 생각해서 직관적으로 눈에 보이는 편집 WYSIWYG 방식으로 구현
 
 - [1] font
-![Image](https://github.com/user-attachments/assets/bcf459c3-25bd-4390-be74-76281c1b5083)
+  <img src="https://github.com/user-attachments/assets/bcf459c3-25bd-4390-be74-76281c1b5083" align="center" width="100%"> 
     
 - [2] header
-![Image](https://github.com/user-attachments/assets/f04d6bdf-114c-4ecc-bea2-f5961581b205)
+  <img src="https://github.com/user-attachments/assets/f04d6bdf-114c-4ecc-bea2-f5961581b205" align="center" width="100%"> 
     
 - [3] bord, italic, underline, strike
-![Image](https://github.com/user-attachments/assets/47a22a1f-30bd-4604-b9cb-4f913c5e871c)
+  <img src="https://github.com/user-attachments/assets/47a22a1f-30bd-4604-b9cb-4f913c5e871c" align="center" width="100%"> 
     
 - [4] color, background
-![Image](https://github.com/user-attachments/assets/53f1d8fe-7619-4c79-8f2a-bef6456b887f)
+  <img src="https://github.com/user-attachments/assets/53f1d8fe-7619-4c79-8f2a-bef6456b887f" align="center" width="100%"> 
     
 - [5] align : 정렬
-![Image](https://github.com/user-attachments/assets/350de3e6-efd3-4f57-b599-9030ff302f81)
+  <img src="https://github.com/user-attachments/assets/350de3e6-efd3-4f57-b599-9030ff302f81" align="center" width="100%"> 
     
 - [6] list: ordered, bullet
-![Image](https://github.com/user-attachments/assets/2679d1c1-3f39-40e0-a701-3963acb71648)
+  <img src="https://github.com/user-attachments/assets/2679d1c1-3f39-40e0-a701-3963acb71648" align="center" width="100%"> 
     
 - [7] blockquote
-![Image](https://github.com/user-attachments/assets/6f44605d-1fa6-492a-bf51-6eddad2f8bf8)
+  <img src="https://github.com/user-attachments/assets/6f44605d-1fa6-492a-bf51-6eddad2f8bf8" align="center" width="100%"> 
     
 - [8] link : url 저장한 뒤 클릭 시 방문 및 수정 삭제 가능
-![Image](https://github.com/user-attachments/assets/00f53123-d84f-44c3-9f17-6e92f0096647)
-![Image](https://github.com/user-attachments/assets/db3ca31c-9b35-4cc2-84e2-f15ae3e795d1)
+  <img src="https://github.com/user-attachments/assets/00f53123-d84f-44c3-9f17-6e92f0096647" align="center" width="100%">
+  <img src="https://github.com/user-attachments/assets/db3ca31c-9b35-4cc2-84e2-f15ae3e795d1" align="center" width="100%"> 
     
 - [9] image : 크기조절 및 align가능
-![Image](https://github.com/user-attachments/assets/0bbccebd-f391-4f0a-9741-ed0404bb4833)
+  <img src="https://github.com/user-attachments/assets/0bbccebd-f391-4f0a-9741-ed0404bb4833" align="center" width="100%"> 
     
 - [10] clean : 텍스트 설정 지우기
