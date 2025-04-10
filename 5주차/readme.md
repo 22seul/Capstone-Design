@@ -219,7 +219,7 @@
 - [4] color, background
 ![Image](https://github.com/user-attachments/assets/53f1d8fe-7619-4c79-8f2a-bef6456b887f)
     
-- [5] align
+- [5] align : 정렬
 ![Image](https://github.com/user-attachments/assets/350de3e6-efd3-4f57-b599-9030ff302f81)
     
 - [6] list: ordered, bullet
