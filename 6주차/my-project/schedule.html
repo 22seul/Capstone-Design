@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>일정관리공간</title>
+  <link rel="stylesheet" href="styles/schedule.css" />
+</head>
+<body>
+  <div class="schedule-space">
+    <h1 class="schedule-title">📆 일정관리공간</h1>
+    <div class="view-switcher">
+      <button id="view-weekly-btn">🗓️ 주간 일정</button>
+      <button id="view-monthly-btn">🗓️ 월간 일정</button>
+    </div>
+  </div>
+  <hr>
+  <div class="container">
+    <section class="add-schedule">
+      <input type="text" id="schedule-name" placeholder="[속성] 일정 제목 입력" />
+      <input type="date" id="schedule-date" />
+      <button id="add-schedule-btn">➕ 추가</button>
+    </section>
+    <section class="select-container">
+      <div id="select-title">속성별 보기 : </div>
+      <select id="filter-select">
+        <option value="all">전체 보기</option>
+      </select>
+    </section>
+    <section id="schedule-list" class="schedule-list">
+      <table>
+        <thead>
+          <tr>
+            <th>속성</th>
+            <th>제목</th>
+            <th>날짜</th>
+            <th>완료</th>
+            <th>삭제</th>
+          </tr>
+        </thead>
+        <tbody id="schedule-table-body"></tbody>
+      </table>
+      <button id="toggle-schedule-btn" style="display: none;">더 보기</button>
+    </section>
+  </div>
+
+  <script type="module" src="scripts/schedule.js"></script>
+  <script type="module" src="scripts/storage_schedule.js"></script>
+</body>
+</html>

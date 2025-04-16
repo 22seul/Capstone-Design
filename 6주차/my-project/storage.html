@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>저장소 페이지</title>
+  <link rel="stylesheet" href="styles/storage.css" />
+</head>
+<body>
+  <h1 class="storage-title">저장소 이름</h1>
+  <p class="storage-period">기간: </p>
+
+  <div class="storage-container">
+    <!-- 기록공간 -->
+    <div class="record-space">
+      <h2 class="clickable-title" id="record-title">✏️ 기록공간 </h2>
+      <div class="record-inputs">
+        <input type="text" id="subject-name" placeholder="과목명 입력" />
+        <input type="text" id="attribute-input" list="attribute-select" placeholder="속성 입력 또는 선택" />
+        <datalist id="attribute-select"></datalist>
+        <button id="add-subject">➕ 추가</button>
+      </div>
+      <div class="subject-group-container"></div>
+    </div>
+
+    <!-- 일정관리 -->
+    <div class="schedule-space">
+      <h2 class="clickable-title" id="schedule-title">📆 일정관리공간</h2>
+      <section class="add-schedule">
+        <input type="text" id="schedule-name" placeholder="[속성] 일정 제목 입력" />
+        <input type="date" id="schedule-date" />
+        <button id="add-schedule-btn">➕ 추가</button>
+      </section>
+      <div class="container">
+        <section class="select-container">
+          <div id="select-title">속성별 보기 : </div>
+          <select id="filter-select">
+            <option value="all">전체 보기</option>
+          </select>
+        </section>
+        <section id="schedule-list" class="schedule-list">
+          <table>
+            <thead>
+              <tr>
+                <th>속성</th>
+                <th>제목</th>
+                <th>날짜</th>
+                <th>완료</th>
+                <th>삭제</th>
+              </tr>
+            </thead>
+            <tbody id="schedule-table-body"></tbody>
+          </table>
+          <!-- 더 보기 버튼 -->
+          <button id="toggle-schedule-btn" style="display: none;">더 보기</button>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="scripts/storage.js"></script>
+  <script type="module" src="scripts/storage_record.js"></script>
+  <script type="module" src="scripts/storage_schedule.js"></script>
+</body>
+</html>

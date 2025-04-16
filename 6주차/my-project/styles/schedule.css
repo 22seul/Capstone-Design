@@ -1,0 +1,174 @@
+/* 전체 레이아웃 */
+body {
+  background-color: #FAFAFA;
+  color: #2F2F2F;
+}
+
+/* 기록공간: 전체 레이아웃 */
+.schedule-space {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1rem;
+}
+
+.schedule-title {
+  flex: 1;
+  font-size: 2.5rem;
+  margin: 7rem 0 0 2.5rem;
+}
+
+/* 주간, 월간 이동 */
+.view-switcher {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-right: 2rem;
+}
+
+.view-switcher button {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.view-switcher button:hover {
+  background-color: #eaeaea;
+}
+
+hr {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 1.5rem 2rem 0.5rem 2rem;
+}
+
+/* 일정 추가 폼 */
+.add-schedule {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  max-width:840px;
+  margin-left: auto;
+}
+
+.add-schedule input,
+#add-schedule-btn {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 4px;
+}
+
+.add-schedule input[type="text"],
+.add-schedule input[type="date"] {
+  flex:30%;
+}
+
+#add-schedule-btn {
+  flex:13%;
+}
+
+.add-schedule input:focus {
+  outline: none;
+  border-width: 2px;
+}
+
+#add-schedule-btn:hover {
+  background-color: #e2e2e2;
+  color: #1c1c1c;
+}
+
+/* 메인 컨테이너 */
+.container {
+  margin: 0 3rem 0 3rem;
+  padding: 1rem 0 1.5rem 0;
+  background-color: #FAFAFA;
+}
+
+/* 선택박스 스타일 선택적으로 추가 */
+.select-container {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+#select-title {
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+#filter-select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 4px;
+}
+
+#filter-select:focus {
+  outline: none;
+  border-width: 2px;
+}
+
+/* 일정 리스트 */
+.schedule-list table {
+  width: 94%;
+  margin-left: 3%;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.schedule-list th,
+.schedule-list td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.schedule-list input[type="checkbox"] {
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
+.schedule-completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.schedule-list td[contenteditable="true"]:focus {
+  outline: none;
+  background-color: rgba(200, 200, 200, 0.1);
+  border: 2px solid rgba(200,200,200,0.3);
+}
+
+.schedule-list button {
+  padding: 0.2rem;
+  border: 1px solid #d1d1d1;
+  border-radius: 16px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.schedule-list button:hover {
+  background-color: #f0f0f0;
+}
+
+/* '더 보기' 버튼 스타일 */
+#toggle-schedule-btn {
+  display: none;
+  margin: 1.5rem auto;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#toggle-schedule-btn:hover {
+  background-color: #e0e0e0;
+}
