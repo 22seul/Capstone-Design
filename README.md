@@ -27,10 +27,10 @@
 
 | 주차 | 목표 |  |
 | --- | --- | --- |
-| 1주차  | 개발 계획서 작성 |  |
-| 2주차 (03.12~03.18) | 프로젝트 기본 구조 설계 (HTML/CSS 기본 레이아웃) | [🔎](https://github.com/22seul/Capstone-Design/tree/main/1%EC%A3%BC%EC%B0%A8_%EA%B0%9C%EB%B0%9C%20%EA%B3%84%ED%9A%8D%EC%84%9C) |
-| 3주차 (03.19~03.25) | Firebase Authentication을 이용한 로그인 기능 구현 |  |
-| 4주차 (03.26~04.01) | 개인 Workspace(자신 계정 공간) 구현, 저장소 생성 |  |
-| 5주차 (04.02~04.08) | 기록 공간(카테고리별 관리) UI 및 데이터 연동 |  |
-| 6주차 (04.09~04.15) | 일정 관리 기능 개발 및 데이터 연동 |  |
-| 7주차 (04.23~05.06) | 반응형 UI 적용 및 최종 테스트 및 배포 |  |
+| 1주차  | 개발 계획서 작성 |  [🔎](https://github.com/22seul/Capstone-Design/tree/main/1%EC%A3%BC%EC%B0%A8_%EA%B0%9C%EB%B0%9C%20%EA%B3%84%ED%9A%8D%EC%84%9C)  |
+| 2주차 (03.12~03.18) | 프로젝트 기본 구조 설계 (HTML/CSS 기본 레이아웃) | [🔎](https://github.com/22seul/Capstone-Design/tree/main/2%EC%A3%BC%EC%B0%A8) |
+| 3주차 (03.19~03.25) | Firebase Authentication을 이용한 로그인 기능 구현 | [🔎](https://github.com/22seul/Capstone-Design/tree/main/3%EC%A3%BC%EC%B0%A8)  |
+| 4주차 (03.26~04.01) | 개인 Workspace(자신 계정 공간) 구현, 저장소 생성 |  [🔎](https://github.com/22seul/Capstone-Design/tree/main/4%EC%A3%BC%EC%B0%A8) |
+| 5주차 (04.02~04.08) | 기록 공간(카테고리별 관리) UI 및 데이터 연동 | [🔎](https://github.com/22seul/Capstone-Design/tree/main/5%EC%A3%BC%EC%B0%A8)  |
+| 6주차 (04.09~04.15) | 일정 관리 기능 개발 및 데이터 연동 |  [🔎](https://github.com/22seul/Capstone-Design/tree/main/6%EC%A3%BC%EC%B0%A8) |
+| 7주차 (04.23~05.06) | 반응형 UI 적용 및 최종 테스트 및 배포 | [🔎](https://github.com/22seul/Capstone-Design/tree/main/7%EC%A3%BC%EC%B0%A8)  |
