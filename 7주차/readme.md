@@ -409,7 +409,6 @@
 
 - npm install -g firebase-tools
     ![Image](https://github.com/user-attachments/assets/41251590-1c70-48bd-bf33-f88f20fd38f2)
-    
 - 설치 확인 : firebase --version
     ![Image](https://github.com/user-attachments/assets/2cd77041-a823-43da-bc72-484b5f384aca)
     
@@ -427,12 +426,10 @@
 - 프로젝트 폴더에서 터미널 열기 → firebase init
     ![Image](https://github.com/user-attachments/assets/99c3516a-2663-42e3-90ee-919aa1e6cf19)
     호스팅 기능 선택
-    
 - firebase 프로젝트 연결, public 폴더 설정, firebase가 github 저장소랑 연결해서 자동으로 빌드 및 배포 할 수 있도록 설정
     ![Image](https://github.com/user-attachments/assets/fb191521-9c57-42a5-b871-80bbbc3df0c1)
     ![Image](https://github.com/user-attachments/assets/e0e07ebd-4b47-4634-9172-88864e3c167b)
     ![Image](https://github.com/user-attachments/assets/347df8c3-c6a6-463f-b220-ad1059458d63)
-    
 - 깃허브 저장소, 브랜치 설정
     ![Image](https://github.com/user-attachments/assets/3d16b127-9e36-4983-8a19-ee37c17026a3)
     
@@ -441,6 +438,5 @@
 
 - firebase deploy
     ![Image](https://github.com/user-attachments/assets/e62fe7ed-84eb-47e6-8d92-26f8fef02148)
-    
 - 성공한 뒤에 Hosting URL 클릭시 실제 웹사이트가 어떻게 보이는지 확인 가능
     ![Image](https://github.com/user-attachments/assets/9efa6364-3a63-4bc3-9bd7-e1a081316325)
