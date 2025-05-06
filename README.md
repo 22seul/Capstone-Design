@@ -1,5 +1,5 @@
 # Capstone-Design
-## [📌 프로젝트 : 발자취](https://plannerapp-f1959.web.app/)
+## 📌 프로젝트 : 발자취[🔍](https://plannerapp-f1959.web.app/)
 
 ## 📝 소개 (Project Overview)
 
