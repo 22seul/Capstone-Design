@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>주간 일정</title>
+  <link rel="stylesheet" href="styles/weekly.css">
+</head>
+<body>
+
+  <div class="week-space">
+    <h1 class="week-title">📆 주간일정관리</h1>
+  </div>
+  <hr>
+  <div class="week-container">
+    <!-- 왼쪽 패널 (이번 주 일정) -->
+    <div class="left-panel">
+      <div class="week-header">
+        <button id="prevWeekBtn">◁</button>
+        <div id="currentWeek"> <span id="weekDate"></span></div>
+        <button id="nextWeekBtn">▷</button>
+      </div>
+      <div class="weekly-grid" id="weeklyGrid"></div>
+    </div>
+
+    <!-- 오른쪽 패널 (이번 주 목표) -->
+    <div class="right-panel">
+      <div class="goal-title">이번 주 목표</div>
+      <div class="goal-input">
+        <input type="text" id="goalInput" placeholder="목표를 입력하세요" />
+        <button id="addGoalBtn">추가</button>
+      </div>
+      <ul id="goalList"></ul>
+    </div>
+  </div>
+
+  <!-- 일정 추가 모달 -->
+  <div id="addScheduleModal" class="modal">
+    <div class="modal-content">
+      <span class="close add-close">&times;</span>
+      <h3>일정 추가</h3>
+      <label for="addModalDate">날짜:</label>
+      <input type="date" id="addModalDate" required>
+      <label for="addTitle">제목:</label>
+      <input type="text" id="addTitle" required>
+      <label for="addStartTime">시작 시간:</label>
+      <input type="time" id="addStartTime" required>
+      <label for="addEndTime">종료 시간:</label>
+      <input type="time" id="addEndTime" required>
+      <label for="addColor">색상:</label>
+      <input type="color" id="addColor" value="#ffd6a5">
+      <button id="saveAddSchedule">추가</button>
+    </div>
+  </div>
+
+  <!-- 일정 수정 모달 -->
+  <div id="editScheduleModal" class="modal">
+    <div class="modal-content">
+      <span class="close edit-close">&times;</span>
+      <h3>일정 수정</h3>
+      <label for="editModalDate">날짜:</label>
+      <input type="date" id="editModalDate" required>
+      <label for="editTitle">제목:</label>
+      <input type="text" id="editTitle" required>
+      <label for="editStartTime">시작 시간:</label>
+      <input type="time" id="editStartTime" required>
+      <label for="editEndTime">종료 시간:</label>
+      <input type="time" id="editEndTime" required>
+      <label for="editColor">색상:</label>
+      <input type="color" id="editColor" value="#ffd6a5">
+      <button id="saveEditSchedule">저장</button>
+      <button id="deleteEditSchedule">삭제</button>
+    </div>
+  </div>
+
+  <script type="module" src="scripts/weekly.js"></script>
+</body>
+</html>

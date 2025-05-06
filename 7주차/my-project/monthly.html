@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>월간 일정 관리</title>
+  <link rel="stylesheet" href="styles/monthly.css" />
+</head>
+<body>
+
+    <div class="month-space">
+        <h1 class="month-title">📆 월간일정관리</h1>
+    </div>
+    <hr>
+    
+    <div id="monthlyContainer"></div>
+
+    <!-- 일정 추가 모달 -->
+    <div id="addScheduleModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>일정 추가</h3>
+            <form id="scheduleForm">
+                <input type="text" id="scheduleTitle" placeholder="제목" required />
+                <input type="date" id="scheduleStartDate" required />
+                <input type="date" id="scheduleEndDate" placeholder="종료일 (선택)" />
+                <input type="color" id="scheduleColor" value="#87CEEB" />
+                <button type="button" id="saveScheduleBtn">추가</button>
+            </form>          
+        </div>
+    </div>
+    
+    <!-- 일정 수정 모달 -->
+    <div id="editScheduleModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>일정 수정</h3>
+            <form id="editScheduleForm">
+                <input type="text" id="editScheduleTitle" placeholder="제목" required />
+                <input type="date" id="editScheduleStartDate" required />
+                <input type="date" id="editScheduleEndDate" placeholder="종료일 (선택)" />
+                <input type="color" id="editScheduleColor" value="#87CEEB" />
+                <button type="button" id="editSaveBtn">저장</button>
+                <button type="button" id="editDeleteBtn">삭제</button>
+            </form>
+        </div>
+    </div>
+  
+    <script type="module" src="scripts/monthly.js"></script>
+</body>
+</html>

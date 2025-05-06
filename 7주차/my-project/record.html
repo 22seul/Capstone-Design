@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>기록공간</title>
+  <link rel="stylesheet" href="styles/record.css" />
+</head>
+<body>
+
+  <div class="record-space">
+    <h1 class="record-title">✏️ 기록공간</h1>
+    <div class="record-inputs">
+      <input type="text" id="subject-name" placeholder="과목명 입력" />
+      <input type="text" id="attribute-input" list="attribute-select" placeholder="속성 입력 또는 선택" />
+      <datalist id="attribute-select"></datalist>
+      <button id="add-subject">➕ 추가</button>
+    </div>
+  </div>
+  <hr>
+  <div class="subject-group-container"></div>
+
+  <script type="module" src="scripts/storage_record.js"></script>
+</body>
+</html>
